@@ -73,6 +73,7 @@
                         <action selector="onTap:" destination="-1" eventType="touchDown" id="ISV-7P-mm1"/>
                         <action selector="onTap:" destination="-1" eventType="valueChanged" id="dGZ-Gl-JeS"/>
                         <action selector="onTap:" destination="-1" eventType="editingDidEndOnExit" id="xcA-yC-uQB"/>
+                        <action selector="onTouchDown:" destination="-1" eventType="touchDown" id="CXc-XR-tE0"/>
                     </connections>
                 </segmentedControl>
             </subviews>

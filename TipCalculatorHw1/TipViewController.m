@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 - (IBAction)onTap:(id)sender;
+- (IBAction)onTouchDown:(id)sender;
 - (void)updateValues;
 
 @end
@@ -62,7 +63,7 @@ NSMutableArray * _myTipValues;
 
 // additional views:
 - (void) viewWillAppear:(BOOL)animated {
-    NSLog(@"view will appear");
+    // NSLog(@"view will appear");
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
@@ -107,6 +108,11 @@ NSMutableArray * _myTipValues;
 
 - (IBAction)onTap:(id)sender {
     [self.view endEditing:YES];
+    [self updateValues];
+}
+
+- (IBAction)onTouchDown:(id)sender {
+    NSLog(@"activated Touch Down");
     [self updateValues];
 }
 
